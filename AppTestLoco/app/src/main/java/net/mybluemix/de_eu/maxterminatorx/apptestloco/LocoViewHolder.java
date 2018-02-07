@@ -51,8 +51,9 @@ public class LocoViewHolder extends RecyclerView.ViewHolder {
 
         String[] DateFrags = date.split(" ")[0].split("-");
         Date d = new Date(Integer.valueOf(DateFrags[0]),Integer.valueOf(DateFrags[1]),Integer.valueOf(DateFrags[2]));
+        Date d2 = new Date(d.getTime()+1000*60*60*24*3);
         SimpleDateFormat dateFormat = new SimpleDateFormat("MMMM dd");
-        txtFlightDate.setText(dateFormat.format(d));
+        txtFlightDate.setText(dateFormat.format(d)+" - "+dateFormat.format(d2));
     }
 
     public void setFavorite(boolean favorite) {
