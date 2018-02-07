@@ -16,7 +16,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements DataLoader.ResponseHandler{
 
 
-    private static final String URL = "http://192.168.14.82";
+    private static final String URL = "http://192.168.252.29";
     private static final String KEY = "erty78912xx";
 
     private LocoAdapter adapter;
